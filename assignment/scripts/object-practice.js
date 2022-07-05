@@ -14,7 +14,7 @@ const me = {
   lastName: 'Anderson',
   hasSiblings: true,
   shoeCount: 15,
-  favNoms: ['pizza', 'pasta', 'steak', 'potatoes', 'ice cream']
+  favThreeNoms: ['pizza', 'pasta', 'steak',]
 };
 console.log('A little about me:', me);
 
@@ -33,8 +33,8 @@ console.log ('My full name is ', fullName);
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
-console.log ('My most favorite nom is', me.favNoms[0]);
-console.log ('but I also really like to nom on', me.favNoms[me.favNoms.length -1]);
+console.log ('My most favorite nom is', me.favThreeNoms[0]);
+console.log ('but I also really like to nom on', me.favThreeNoms[me.favThreeNoms.length -1]);
 
 
 
@@ -44,6 +44,11 @@ console.log ('but I also really like to nom on', me.favNoms[me.favNoms.length -1
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
+console.log('I have', me.shoeCount, 'pairs of shoes');
+
+me.shoeCount = me.shoeCount +1;
+
+console.log('I bought a new pair of shoes, so now I have', me.shoeCount, 'pairs of shoes');
 
 
 /* 5. Add a new property to an existing object.
