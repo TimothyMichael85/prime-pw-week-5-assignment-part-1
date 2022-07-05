@@ -14,7 +14,7 @@ const me = {
   lastName: 'Anderson',
   hasSiblings: true,
   shoeCount: 15,
-  favThreeNoms: ['pizza', 'pasta', 'steak',]
+  favThreeNoms: ['pizza', 'pasta', 'steak']
 };
 console.log('A little about me:', me);
 
@@ -47,8 +47,10 @@ console.log ('but I also really like to nom on', me.favThreeNoms[me.favThreeNoms
 console.log('I have', me.shoeCount, 'pairs of shoes');
 
 me.shoeCount = me.shoeCount +1;
-
 console.log('I bought a new pair of shoes, so now I have', me.shoeCount, 'pairs of shoes');
+
+me.shoeCount = me.shoeCount -1;
+console.log('My partner will not allow me to own another pair of Crocs, so I guess it is back to', me.shoeCount, 'pairs of shoes for me');
 
 
 /* 5. Add a new property to an existing object.
@@ -57,3 +59,7 @@ console.log('I bought a new pair of shoes, so now I have', me.shoeCount, 'pairs 
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+me.favoriteColor = 'green';
+console.log( 'My favorite color is', me.favoriteColor);
+
+console.log(me) //check to verify favoriteColor stayed in object. It did!
